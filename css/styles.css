@@ -93,8 +93,8 @@ body {
 
   .meaning{
     position: fixed;
-    right: 100px;
-    bottom: 20vh;
+    right: 5%;
+    bottom: 10vh;
     z-index: 99;
     background-color:#2f3640;
     height:80px;/*40*/
