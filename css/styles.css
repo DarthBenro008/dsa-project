@@ -9,7 +9,7 @@ body {
   h1 {
     color: #66BFBF;
     font-size: 5.625rem;
-    margin: 50px auto 0 auto;
+    margin: 70px auto 0 auto;
     font-family: 'Sacramento', cursive;
   }
   
@@ -23,6 +23,8 @@ body {
     top:0;
     /*z-index: -1;*/
   }
+
+  
   .middle{
     background-color: grey;
     margin:0;
@@ -88,31 +90,100 @@ body {
     width:500px;
   
   }
+
+  .meaning{
+    position: fixed;
+    right: 100px;
+    bottom: 20vh;
+    z-index: 99;
+    background-color:#2f3640;
+    height:80px;/*40*/
+    width:80px;
+    transition: width 0.6s;
+    border-radius: 80px;/*40*/
+    padding: 10px;
+  
+  }
+  .meaning:hover{
+    width:500px;
+    
+  }
+  .meaning:hover .btn{
+    background-color:#fff;
+    }
+  .meaning:hover .input-box{
+      width:400px;/*240*/
+      padding:0 6px;
+      }
   #know{
     position: absolute;
     top:15px;
     right:5%;
+    background-color: #4CAF50;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 22px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.2s;
   }
-  #know:hover{
-    opacity: 0.6;
+  
+  
+  
+  #know:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
+ 
   a{
     text-decoration: none;
   
+  }
+  #know right_arrow:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
   }
   .algorithm{
   position: absolute;
   top:150px;
   
-  background-color:rgb(169,169,169,0.5);
-  
+  background-color:rgb(240,240,240,0.9);
   font-size: x-large;
   text-align: center;
-  
-  width: 100%;
   height: 300px;
-  
-  
+  position:absolute;
+  top:220px;
+  left: 20%;
+  right: 20%;
+  border-radius: 40px;
+  padding: 30px 50px 30px 50px;
   
   }
-  
+  .check{
+    
+  }
+  td{
+    width: 350px;
+    padding: 10px;
+  }
+
+  #below_search_bar{
+    position: absolute;
+    top: 500px;
+    left:20%;
+    right: 20%;
+  }
+.algo_submit{
+  background-color: #536DFE;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Merriweather', serif;
+  padding: 10px;
+}
