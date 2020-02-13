@@ -26,19 +26,19 @@ body {
 
   
   .middle{
-    background-color: grey;
+    background-color: royalblue;
     margin:0;
     width:100%;
-    height:700px;
+    height:500px;
     padding:0;
     position: absolute;
-    top:800px;
+    top:1100px;
   }
   .bottom{
     background-color: black;
     margin:0;
     width:100%;
-    height:250px;
+    height:150px;
     padding:0;
     position: absolute;
     top:1500px;
@@ -186,4 +186,84 @@ body {
   color: white;
   font-family: 'Merriweather', serif;
   padding: 10px;
+}
+
+.flip-container {
+  perspective: 1000px;
+  position: relative;
+  top: 50px;
+  background-color:transparent;
+}
+	
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateX(-180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+  height: 25vh;
+ 
+
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.front {
+	z-index: 2;
+  transform: rotateX(0deg);
+
+}
+
+
+.back {
+  transform: rotateX(180deg);
+  
+}
+
+.flip-container, .flipper {
+  transform-origin: 100% 12.5vh;
+}
+.contri_front{
+  height: 25vh;
+  background-color: green;
+  color:white;
+  font-size: 30px;
+}
+.contri_back{
+  height: 25vh;
+  background-color: grey;
+  color:white;
+  font-size: 25px;
+  
+}
+.td_contri{
+  width:100px;
+  padding: 0 5px 0 5px;
+}
+.table_contri{
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  
+
+}
+#contri_text{
+  font-family: 'Merriweather', serif;
+  font-size: xx-large;
+  color: white;
 }
