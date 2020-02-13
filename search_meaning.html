@@ -1,119 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> 📘 Dictionary</title>
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>📘 Dictionary</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <script src="js/file.js" charset="utf-8"></script>
-</head>
-<body>
-    <div class="algorithm"><span style="color: blue;">Choose the type(s) of algoritms :</span><br><br>
-    
-    <table>
-      <tr><td>Algorithm 1</td><td><input type="checkbox" class="check" name="subscribe" value="newsletter"></td></tr>
-      <tr><td>Algorithm 2</td><td><input type="checkbox" class="check" name="subscribe" value="newsletter"></td></tr>
-      <tr><td>Algorithm 3</td><td><input type="checkbox" class="check" name="subscribe" value="newsletter"></td></tr>
-      <tr><td>Algorithm 4</td><td><input type="checkbox" class="check" name="subscribe" value="newsletter"></td></tr>
-      
-    </table>
-    <form action="search_meaning.html"><input type="submit" class="algo_submit"></form>
+    <script src="js/file.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="algorithm">
+      <span style="color: blue;">Choose the type(s) of algoritms :</span
+      ><br /><br />
+
+      <table>
+        <tr>
+          <td>Algorithm 1</td>
+          <td>
+            <input
+              type="checkbox"
+              class="check"
+              name="subscribe"
+              value="newsletter"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Algorithm 2</td>
+          <td>
+            <input
+              type="checkbox"
+              class="check"
+              name="subscribe"
+              value="newsletter"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Algorithm 3</td>
+          <td>
+            <input
+              type="checkbox"
+              class="check"
+              name="subscribe"
+              value="newsletter"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Algorithm 4</td>
+          <td>
+            <input
+              type="checkbox"
+              class="check"
+              name="subscribe"
+              value="newsletter"
+            />
+          </td>
+        </tr>
+      </table>
+
+      <form action="search_meaning.html">
+        <input type="submit" class="algo_submit" />
+      </form>
     </div>
-  <div class="meaning" >
-      <input class="input-box" type="text" name="" placeholder="  Search">
+    <div class="meaning">
+      <input class="input-box" type="text" name="" placeholder="  Search" />
       <a class="btn" onclick="myFunction()" href="#">
-      <i class="fas fa-search" style="font-size:x-large"></i>
+        <i class="fas fa-search" style="font-size:x-large"></i>
       </a>
-  </div>
-  
-  <div class="top" id="popup">
-  
-  
-  <h1><span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary</h1>
-  <h3 id="know"><a href="know_more.html">Know more ></a></h3>
- 
- 
-  </div>
-  
-  <div class="middle">
-    <p id="contri_text">Contributors :</p>
-    <table class="table_contri"><tr>
-        <td class="td_contri">
-          
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-              <!-- front content -->
-                <div class="contri_front"><br>Hemanth <br><br> Krishna</div>
+    </div>
+
+    <div class="top" id="popup">
+      <h1>
+        <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
+      </h1>
+      <h3 id="know"><a href="know_more.html">Know more ></a></h3>
+    </div>
+
+    <div class="middle">
+      <p id="contri_text">Contributors :</p>
+      <table class="table_contri">
+        <tr>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <br />Hemanth <br /><br />
+                    Krishna
                   </div>
-              <div class="back">
-               <!-- back content -->
-               <div class="contri_back"><br>Contribution</div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br />Contribution</div>
+                </div>
               </div>
             </div>
-          </div>
-    
-        </td>
-        <td class="td_contri">
-          
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-              <!-- front content -->
-                <div class="contri_front"><br>Parth <br><br>Namdev</div>
-                  </div>
-              <div class="back">
-               <!-- back content -->
-               <div class="contri_back"><br>Contribution</div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front"><br />Parth <br /><br />Namdev</div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br />Contribution</div>
+                </div>
               </div>
             </div>
-          </div>
-    
-        </td>
-        <td class="td_contri"> 
-          
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-              <!-- front content -->
-                <div class="contri_front"><br>Aryak <br><br> Roy</div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <br />Aryak <br /><br />
+                    Roy
                   </div>
-              <div class="back">
-               <!-- back content -->
-               <div class="contri_back"><br>Contribution</div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br />Contribution</div>
+                </div>
               </div>
             </div>
-          </div>
-    
-        </td>
-        <td class="td_contri">
-          
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-              <!-- front content -->
-                <div class="contri_front"><br>Nupoor <br><br> Raj</div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <br />Nupoor <br /><br />
+                    Raj
                   </div>
-              <div class="back">
-               <!-- back content -->
-               <div class="contri_back"><br>Contribution</div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back"><br />Contribution</div>
+                </div>
               </div>
             </div>
-          </div>
-    
-        </td>
-        
-    </tr></table>
-  </div>
-  <div class="bottom">
-  </div>
-  
-  
-  
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="bottom"></div>
   </body>
-</html> 
+</html>
