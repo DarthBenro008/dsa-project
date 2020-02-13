@@ -201,8 +201,7 @@ body {
 
 .flip-container, .front, .back {
 	width: 200px;
-  height: 25vh;
- 
+  height: 25vh; 
 
 }
 
@@ -219,7 +218,8 @@ body {
 
 	position: absolute;
 	top: 0;
-	left: 0;
+  left: 0;
+  border-radius: 84px;
 }
 
 
@@ -243,12 +243,14 @@ body {
   background-color: green;
   color:white;
   font-size: 30px;
+  border-radius: 35px;
 }
 .contri_back{
   height: 25vh;
   background-color: grey;
   color:white;
   font-size: 25px;
+  border-radius: 35px;
   
 }
 .td_contri{
