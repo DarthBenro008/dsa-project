@@ -198,27 +198,11 @@ body {
   border-radius: 40px;
   padding: 30px 50px 30px 50px;
   
-  }/*
-  .algoritm_base_blur{
-    
-  position: absolute;
-  top:150px;
-  filter: blur(20px);
-  background-color:rgb(240,240,240,0.9);
-  
-  text-align: center;
-  height: 300px;
-  position:absolute;
-  top:220px;
-  left: 20%;
-  right: 20%;
-  border-radius: 40px;
-  padding: 30px 50px 30px 50px;
-  }*/
-  
+  }
+  /*
   .check{
     
-  }
+  }*/
   td{
     width: 350px;
     padding: 10px;
