@@ -17,6 +17,14 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/pretty-checkbox/dist/pretty-checkbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@mdi/font/css/materialdesignicons.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="favicon.ico" />
 
@@ -31,55 +39,56 @@
         <tr>
           <td>Algorithm 1</td>
           <td>
-            <input
-              type="checkbox"
-              class="check"
-              name="subscribe"
-              value="newsletter"
-            />
+            <div class="pretty p-icon p-round p-jelly">
+              <input type="radio" name="algoradio" id = "firstCheckBox" />
+              <div class="state p-primary">
+                <i class="icon mdi mdi-check"></i>
+                <label></label>
+              </div>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Algorithm 2</td>
           <td>
-            <input
-              type="checkbox"
-              class="check"
-              name="subscribe"
-              value="newsletter"
-            />
+            <div class="pretty p-icon p-round p-jelly">
+            <input type="radio"name="algoradio" />
+            <div class="state p-primary">
+              <i class="icon mdi mdi-check"></i>
+              <label></label>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Algorithm 3</td>
           <td>
-            <input
-              type="checkbox"
-              class="check"
-              name="subscribe"
-              value="newsletter"
-            />
+            <div class="pretty p-icon p-round p-jelly">
+            <input type="radio" name="algoradio"/>
+            <div class="state p-primary">
+              <i class="icon mdi mdi-check"></i>
+              <label></label>
+            </div>
           </td>
         </tr>
         <tr>
           <td>Algorithm 4</td>
           <td>
-            <input
-              type="checkbox"
-              class="check"
-              name="subscribe"
-              value="newsletter"
-            />
+            <div class="pretty p-icon p-round p-jelly">
+            <input type="radio" name="algoradio" />
+            <div class="state p-primary">
+              <i class="icon mdi mdi-check"></i>
+              <label></label>
+            </div>
           </td>
         </tr>
       </table>
 
       <form action="search_meaning.html">
-        <input type="submit" class="algo_submit" />
+        <input type="submit" class="algo_submit" onclick="hideCheck()" />
       </form>
     </div>
-    <div class="meaning">
-      <input class="input-box" type="text" name="" placeholder="Search" />
+    <div class="sticky_search_circle">
+      <input class="input-box" type="text" id="word_input" placeholder="Search" />
       <a class="btn" onclick="callPopUp()" href="#">
         <i class="fas fa-search" style="font-size:x-large"></i>
       </a>

@@ -24,7 +24,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"
+      href="node_modules/pretty-checkbox/dist/pretty-checkbox.css"
     />
     <link rel="icon" href="favicon.ico">
 
@@ -86,12 +86,12 @@
       </table>
 
       <form action="search_meaning.html">
-        <input type="submit" class="algo_submit" />
+        <input type="submit" class="algo_submit" onclick="hideCheck()" />
       </form>
     </div>
   
     <!--Main Page -->
-    <div class="top" id="popup">
+    <div class="top">
       <h1>
         <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
       </h1>

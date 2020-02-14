@@ -34,22 +34,28 @@ body {
   }
   .top12
   {background-color:aquamarine;
-    margin:0;
-    width:100%;
-    height:800px;
-    padding:0;
+    margin: 15px 0 15px 0; 
+    width:auto;
+    height:500px;
+    padding:10px;
     position:absolute;
     top:220px;
+    left:10%;
+    right:10%;
+    border-radius: 20px;
   }
 
   .top2
   {background-color:brown;
-    margin:0;
-    width:100%;
+    margin:15px 0 15px 0;
+    width:auto;
     height:300px;
-    padding:0;
+    padding:10px;
     position:absolute;
     top:800px;
+    left:10%;
+    right:10%;
+    border-radius: 20px;
     line-height:35px;
     align-content: center;
     color:white;
@@ -67,7 +73,7 @@ body {
     height:500px;
     padding:0;
     position: absolute;
-    top:1100px;
+    top:1200px;
   }
   .bottom{
     background-color: black;
@@ -76,7 +82,7 @@ body {
     height:150px;
     padding:0;
     position: absolute;
-    top:1500px;
+    top:1600px;
   }
   .search-box{
   position: absolute;
@@ -126,10 +132,10 @@ body {
   
   }
 
-  .meaning{
+  .sticky_search_circle{
     position: fixed;
-    right: 5%;
-    bottom: 10vh;
+    right: 1.5%;
+    bottom: 30px;
     z-index: 99;
     background-color:#2f3640;
     height:80px;/*40*/
@@ -139,14 +145,14 @@ body {
     padding: 10px;
   
   }
-  .meaning:hover{
+  .sticky_search_circle:hover{
     width:500px;
     
   }
-  .meaning:hover .btn{
+  .sticky_search_circle:hover .btn{
     background-color:#fff;
     }
-  .meaning:hover .input-box{
+  .sticky_search_circle:hover .input-box{
       width:400px;/*240*/
       padding:0 6px;
       }
@@ -185,13 +191,11 @@ body {
     transition: 0.5s;
   }
   .algorithm{
-  position: absolute;
-  top: 150px;
   background-color:rgb(240,240,240,0.9);
   font-size: x-large;
   text-align: center;
   height: 300px;
-  position:absolute;
+  position:fixed;
   top:220px;
   left: 20%;
   right: 20%;
@@ -236,7 +240,7 @@ body {
 
 .flip-container, .front, .back {
 	width: 200px;
-  height: 25vh; 
+  height: 220px; 
 
 }
 
@@ -271,21 +275,21 @@ body {
 }
 
 .flip-container, .flipper {
-  transform-origin: 100% 12.5vh;
+  transform-origin: 100% 110px;
 }
 .contri_front{
-  height: 25vh;
+  height: 220px;
   background-color: green;
   color:white;
-  font-size: 30px;
-  border-radius: 35px;
+  font-size: 25px;
+  border-radius: 10px;
 }
 .contri_back{
-  height: 25vh;
+  height: 220px;
   background-color: grey;
   color:white;
   font-size: 25px;
-  border-radius: 35px;
+  border-radius: 10px;
   
 }
 .td_contri{
