@@ -8,8 +8,8 @@ body {
   
   h1 {
     color: #66BFBF;
-    font-size: 5.625rem;
-    margin: 70px auto 0 auto;
+    font-size: 7.625rem;
+    margin: 30px auto 0 auto;
     font-family: 'Sacramento', cursive;
   }
   
@@ -36,8 +36,8 @@ body {
   {background-color:aquamarine;
     margin: 15px 0 15px 0; 
     width:auto;
-    height:500px;
-    padding:10px;
+    height:auto;
+    padding:90px;
     position:absolute;
     top:220px;
     left:10%;
@@ -46,7 +46,7 @@ body {
   }
 
   .top2
-  {background-color:brown;
+  {background-color:aquamarine;
     margin:15px 0 15px 0;
     width:auto;
     height:300px;
@@ -57,14 +57,18 @@ body {
     right:10%;
     border-radius: 20px;
     line-height:35px;
-    align-content: center;
-    color:white;
+    color:black;
+    font-family: 'Cabin', sans-serif;
   }
 
   .top2 table
-  {margin-left:25%;
+  {
+    position: absolute;
+    left:20%;
+    right:20%;
 
   }
+  
   
   .middle{
     background-color: royalblue;
@@ -182,6 +186,7 @@ body {
     text-decoration: none;
   
   }
+  /*
   #know right_arrow:after {
     content: '\00bb';
     position: absolute;
@@ -189,7 +194,7 @@ body {
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+  }*/
   .algorithm{
   background-color:rgb(240,240,240,0.9);
   font-size: x-large;
@@ -210,6 +215,9 @@ body {
   td{
     width: 350px;
     padding: 10px;
+  }
+  th{
+    font-size: 20px;
   }
 
   #below_search_bar{
@@ -307,4 +315,26 @@ body {
   font-family: 'Merriweather', serif;
   font-size: xx-large;
   color: white;
+}
+.overflow{
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.word{
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+hr{
+  padding-top: 0;
+  margin-top: 0;
+  border-style: solid;
+  border-width: 1px;
+}
+.meaning{
+  margin-top:50px;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: 'Cabin', sans-serif;
 }

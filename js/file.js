@@ -50,3 +50,4 @@ function hideCheck() {
 function changeText() {
   document.getElementById("texto").innerHTML = "New text!";
 }
+
