@@ -6,7 +6,7 @@ function callPopUp() {
     elements[0].style.zIndex = "2";
     elements[0].style.display = "block";
     elements[0].style.top = "180px";
-    
+    elements[0].style.boxShadow = "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)";
 
   }
   var elements_base_blur = document.getElementsByClassName("top");
