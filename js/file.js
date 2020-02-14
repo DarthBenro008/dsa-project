@@ -1,5 +1,6 @@
 //External JS File
 function callPopUp() {
+  
   var word = document.getElementById("word_input").value; 
   var wordNullCheck = 0;
   console.log(word);
@@ -8,6 +9,7 @@ function callPopUp() {
     wordNullCheck= 1;
   }
   if(wordNullCheck==0){
+  document.getElementById("firstCheckBox").checked = true;
   var elements = document.getElementsByClassName("algorithm");
   if (elements.length > 0) {
     elements[0].style.transition = "0.2s";
@@ -17,7 +19,7 @@ function callPopUp() {
     elements[0].style.boxShadow = "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)";
 
   }
-  document.getElementsByName("algoradio")[0].setAttribute("checked","true"); 
+  
   var elements_base_blur = document.getElementsByClassName("top");
   if (elements_base_blur.length > 0) {
     elements_base_blur[0].style.filter = "blur(5px)";
@@ -26,6 +28,10 @@ function callPopUp() {
     elements_base_blur[0].style.transition = "0.5s";
   }
 }
+}
+
+function hideCheck(){
+  document.getElementById("firstCheckBox").checked = false;
 }
 function changeText() {
   document.getElementById("texto").innerHTML = "New text!";
