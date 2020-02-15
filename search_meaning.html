@@ -31,6 +31,7 @@
     <script src="js/file.js" charset="utf-8"></script>
   </head>
   <body>
+    <!--popup-->
     <div class="algorithm">
       <span style="color: blue;">Choose the type(s) of algoritms :</span
       ><br /><br />
@@ -87,6 +88,7 @@
         <input type="submit" class="algo_submit" onclick="hideCheck()" />
       </form>
     </div>
+    <!--sticky corner search bar-->
     <div class="sticky_search_circle">
       <input class="input-box" type="text" id="word_input" placeholder="Search" />
       <a class="btn" onclick="callPopUp()" href="#">
@@ -94,20 +96,22 @@
       </a>
     </div>
 
-    <div class="top">
-      <div class="top1">
+    <div class="top"><!--entire container above contributors-->
+      <div class="top1"><!--Dictionary name_and_know more button_and_top12-->
         <h1>
           <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
         </h1>
         <h3 id="know"><a href="know_more.html">Know more ></a></h3>
-        <div class="top12">
-          <p class="word overflow">anonymous</p>
+        <div class="top12"><!--sub division of top1 containing cards of meaning and table of algorithm-->
+          <p class="word overflow">anonymous</p><!--word-->
           <hr>
-          <p class="overflow">time</p>
+          <p class="overflow">execution time : <span>88.88s</span></p><!--time-->
+          <!--meaning-->
           <p class="meaning overflow">meaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaningmeaning</p>
         </div>
       </div>
       <br>
+      <!--table showing different algoritms and time-->
       <div class="top2">
         <table>
           <tr>
@@ -144,7 +148,7 @@
         </table>
       </div>
     </div>
-
+<!--contributors-->
     <div class="middle">
       <p id="contri_text">Contributors :</p>
       <table class="table_contri">
@@ -229,6 +233,7 @@
         </tr>
       </table>
     </div>
+    <!--footer-->
     <div class="bottom"></div>
   </body>
 </html>

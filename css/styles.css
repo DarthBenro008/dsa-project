@@ -43,6 +43,8 @@ body {
     left:10%;
     right:10%;
     border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
   }
 
   .top2
@@ -59,6 +61,7 @@ body {
     line-height:35px;
     color:black;
     font-family: 'Cabin', sans-serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
   .top2 table
@@ -247,7 +250,7 @@ body {
 	}
 
 .flip-container, .front, .back {
-	width: 200px;
+	width: 85%;
   height: 220px; 
 
 }
@@ -301,7 +304,7 @@ body {
   
 }
 .td_contri{
-  width:100px;
+  width:20%;
   padding: 0 5px 0 5px;
 }
 .table_contri{
@@ -337,4 +340,5 @@ hr{
   font-size: 25px;
   line-height: 30px;
   font-family: 'Cabin', sans-serif;
+  
 }
