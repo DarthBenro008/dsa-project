@@ -34,7 +34,7 @@
     <!--Pop Up-->
     
     <div class="algorithm">
-      <span style="color: blue;">Choose the type(s) of algoritms :</span
+      <span class="choose_algoritm_heading">Choose the type(s) of algoritms :</span
       ><br /><br />
 
       <table>
@@ -44,7 +44,7 @@
             <div class="pretty p-icon p-round p-jelly">
               <input type="radio" name="algoradio" id = "firstCheckBox" />
               <div class="state p-primary">
-                <i class="icon mdi mdi-check"></i>
+                <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
                 <label></label>
               </div>
             </div>
@@ -56,7 +56,7 @@
             <div class="pretty p-icon p-round p-jelly">
             <input type="radio"name="algoradio" />
             <div class="state p-primary">
-              <i class="icon mdi mdi-check"></i>
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
               <label></label>
             </div>
           </td>
@@ -67,7 +67,7 @@
             <div class="pretty p-icon p-round p-jelly">
             <input type="radio" name="algoradio"/>
             <div class="state p-primary">
-              <i class="icon mdi mdi-check"></i>
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
               <label></label>
             </div>
           </td>
@@ -78,16 +78,14 @@
             <div class="pretty p-icon p-round p-jelly">
             <input type="radio" name="algoradio" />
             <div class="state p-primary">
-              <i class="icon mdi mdi-check"></i>
+              <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
               <label></label>
             </div>
           </td>
         </tr>
       </table>
+      <a href="search_meaning.html" class="algo_submit">Submit</a>
 
-      <form action="search_meaning.html">
-        <input type="submit" class="algo_submit" onclick="hideCheck()" />
-      </form>
     </div>
   
     <!--Main Page -->
@@ -95,7 +93,7 @@
       <h1>
         <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
       </h1>
-      <h3 id="know"><a href="know_more.html">Know more ></a></h3>
+      <a href="know_more.html" id="know">Know more ></a>
       <div class="search-box">
         <input class="input-box" type="text" id="word_input" placeholder="Search" />
         <a class="btn" onclick="callPopUp()" href="#">
@@ -106,7 +104,7 @@
     </div>
 
     <div class="middle">
-      <p id="contri_text">Contributors :</p>
+      <p id="contri_text"><span style="font-family: 'Ribeye Marrow', cursive;">D</span>evelopers</p>
       <table class="table_contri">
         <tr>
           <td class="td_contri">
@@ -118,30 +116,14 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <br />Hemanth <br /><br />
-                    Krishna
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br> Hemanth Krishna <br>19BCT0230</span>
+                    
+                    
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
-                  <div class="contri_back"><br />Contribution</div>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="td_contri">
-            <div
-              class="flip-container"
-              ontouchstart="this.classList.toggle('hover');"
-            >
-              <div class="flipper">
-                <div class="front">
-                  <!-- front content -->
-                  <div class="contri_front"><br />Parth <br /><br />Namdev</div>
-                </div>
-                <div class="back">
-                  <!-- back content -->
-                  <div class="contri_back"><br />Contribution</div>
+                  <div class="contri_back"><br /><span class="contri_content_back"><i class="fas fa-code fa-3x"></i><br> <br> Backend</span><br /></div></div>
                 </div>
               </div>
             </div>
@@ -155,13 +137,12 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <br />Aryak <br /><br />
-                    Roy
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Parth Namdev <br>19BCE0440</span>
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
-                  <div class="contri_back"><br />Contribution</div>
+                  <div class="contri_back"><span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span></div></div>
                 </div>
               </div>
             </div>
@@ -175,13 +156,34 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <br />Nupoor <br /><br />
-                    Raj
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Aryak Roy <br>19BCE2165</span>
+                    
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
-                  <div class="contri_back"><br />Contribution</div>
+                  <div class="contri_back">
+                    <span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span><br /></div>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="td_contri">
+            <div
+              class="flip-container"
+              ontouchstart="this.classList.toggle('hover');"
+            >
+              <div class="flipper">
+                <div class="front">
+                  <!-- front content -->
+                  <div class="contri_front">
+                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Nupoor Raj <br>19BCE2145</span>  
+                  </div>
+                </div>
+                <div class="back">
+                  <!-- back content -->
+                  <div class="contri_back">
+                    <span class="contri_content_back"><i class="fas fa-file-alt fa-3x"></i> <br> <br> Documentation <br>and <br>Research</span></div>
                 </div>
               </div>
             </div>
