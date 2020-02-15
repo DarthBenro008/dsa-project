@@ -40,7 +40,8 @@ function callPopUp() {
       elements_base_blur[0].style.display = "block";
       elements_base_blur[0].style.transition = "0.5s";
     }
-    document.getElementsByClassName("sticky_search_circle")[0].style.display="none";
+    document.getElementsByClassName("sticky_search_circle")[0].style.display = "none";
+  
   }
 }
 
@@ -49,4 +50,13 @@ function hideCheck() {
 }
 function changeText() {
   document.getElementById("texto").innerHTML = "New text!";
+}
+
+function getJsonObj() {
+  alert("hello");
+  var request = new XMLHttpRequest();
+  request.open("GET", "file.json", false);
+  request.send(null)
+  var my_JSON_object = JSON.parse(request.responseText);
+  alert(my_JSON_object.result[0]);
 }
