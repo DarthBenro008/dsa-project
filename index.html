@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -96,9 +96,22 @@
       <a href="know_more.html" id="know">Know more ></a>
       <div class="search-box">
         <input class="input-box" type="text" id="word_input" placeholder="Search" />
-        <a class="btn" onclick="callPopUp()" href="#">
+        <a class="btn" onclick="callPopUp()" href="#" id="searchbtn">
           <i class="fas fa-search" style="font-size:x-large"></i>
         </a>
+        <script>
+          var input = document.getElementById("word_input");
+      
+            input.addEventListener("keyup", function (event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+              // Cancel the default action, if needed
+              event.preventDefault();
+              // Trigger the button element with a click
+              document.getElementById("searchbtn").click();
+            }
+          });
+        </script>
       </div>
       <h2 id="below_search_bar">Wanna search a meaning ? ... Here you go !</h2>
     </div>
