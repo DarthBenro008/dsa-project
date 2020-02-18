@@ -404,3 +404,19 @@ hr{
   font-family: 'Cabin', sans-serif;
   
 }
+.load
+{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.load_div{
+  background-color: #8EE4AF;
+    z-index:100;
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:100%;
+    
+}

@@ -4,7 +4,7 @@ function callPopUp() {
   var wordNullCheck = 0;
   console.log(word);
   if (word === "") {
-    alert("Don't try to be supersmart you stinky piece of shit");
+    alert("The field is empty! please enter a word.");
     wordNullCheck = 1;
   }
   if (wordNullCheck == 0) {
@@ -50,3 +50,10 @@ function hideCheck() {
 function changeText() {
   document.getElementById("texto").innerHTML = "New text!";
 }
+function hide_loading(){
+  var elements = document.getElementsByClassName("load_div");
+    if (elements.length > 0) {
+      elements[0].style.zIndex = "-1";
+    }
+}
+  
