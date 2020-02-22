@@ -317,6 +317,10 @@ body {
   transform: rotateX(180deg);
   
 }
+.flipoverflow
+{
+  overflow-wrap: break-word;
+}
 
 .flip-container, .flipper {
   transform-origin: 100% 110px;
@@ -385,6 +389,7 @@ body {
   overflow-wrap: break-word;
   text-align: left;
 }
+
 .word{
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 50px;
@@ -402,7 +407,29 @@ hr{
   font-size: 25px;
   line-height: 30px;
   font-family: 'Cabin', sans-serif;
+  max-height:120px;
+  overflow-y:scroll; /*vertical scroll bar*/
   
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8EE4AF; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 .load
 {
