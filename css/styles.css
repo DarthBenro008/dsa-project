@@ -220,7 +220,7 @@ body {
   background-color:rgb(142,228,175,0.9);
   font-size: x-large;
   text-align: center;
-  height: 300px;
+  height: auto;
   position:fixed;
   top:220px;
   left: 20%;
@@ -264,6 +264,11 @@ body {
     transition-duration: 0.2s;
     font-family: 'Cabin', 'Montserrat', sans-serif;
     border: none;
+}
+.algo_submit:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color:white;
+
 }
 .choose_algoritm_heading{
   font-family: 'Cabin', 'Montserrat', sans-serif;
@@ -407,7 +412,7 @@ hr{
   font-size: 25px;
   line-height: 30px;
   font-family: 'Cabin', sans-serif;
-  max-height:120px;
+  max-height:90px;
   overflow-y:scroll; /*vertical scroll bar*/
   
 }
@@ -446,4 +451,10 @@ hr{
     bottom:0;
     width:100%;
     
+}
+.edit
+{
+
+  border:solid 3px #5CD49F;
+  border-radius: 50%;
 }
