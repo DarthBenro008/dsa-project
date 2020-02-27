@@ -30,7 +30,8 @@
 
     <script src="js/file.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body onload="hide_loading()">
+    <div class="load_div"><img class="load" src="Ball-1.3s-200px.svg" alt=""></div>
     <!--Pop Up-->
     
     <div class="algorithm">
@@ -41,7 +42,7 @@
         <tr>
           <td>Algorithm 1</td>
           <td>
-            <div class="pretty p-icon p-round p-jelly">
+            <div class="pretty p-icon p-round p-jelly edit">
               <input type="radio" name="algoradio" id = "firstCheckBox" />
               <div class="state p-primary">
                 <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
@@ -53,9 +54,9 @@
         <tr>
           <td>Algorithm 2</td>
           <td>
-            <div class="pretty p-icon p-round p-jelly">
-            <input type="radio"name="algoradio" />
-            <div class="state p-primary">
+            <div class="pretty p-icon p-round p-jelly edit" >
+            <input type="radio" name="algoradio"  >
+            <div class="state p-primary"  >
               <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
               <label></label>
             </div>
@@ -64,7 +65,7 @@
         <tr>
           <td>Algorithm 3</td>
           <td>
-            <div class="pretty p-icon p-round p-jelly">
+            <div class="pretty p-icon p-round p-jelly edit">
             <input type="radio" name="algoradio"/>
             <div class="state p-primary">
               <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
@@ -75,7 +76,7 @@
         <tr>
           <td>Algorithm 4</td>
           <td>
-            <div class="pretty p-icon p-round p-jelly">
+            <div class="pretty p-icon p-round p-jelly edit">
             <input type="radio" name="algoradio" />
             <div class="state p-primary">
               <i class="icon mdi mdi-check" style="background-color:#2f3640"></i>
@@ -89,7 +90,7 @@
     </div>
   
     <!--Main Page -->
-    <div class="top">
+    <div class="top" style="height:850px">
       <h1>
         <span style="font-family: 'Ribeye Marrow', cursive;">D</span>ictionary
       </h1>
@@ -116,7 +117,7 @@
       <h2 id="below_search_bar">Wanna search a meaning ? ... Here you go !</h2>
     </div>
 
-    <div class="middle">
+    <div class="middle" style="top:850px">
       <p id="contri_text"><span style="font-family: 'Ribeye Marrow', cursive;">D</span>evelopers</p>
       <table class="table_contri">
         <tr>
@@ -129,14 +130,14 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br> Hemanth Krishna <br>19BCT0230</span>
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br> Hemanth Krishna <br>19BCT0230</span>
                     
                     
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
-                  <div class="contri_back"><br /><span class="contri_content_back"><i class="fas fa-code fa-3x"></i><br> <br> Backend</span><br /></div></div>
+                  <div class="contri_back"><br /><span class="contri_content_back flipoverflow"><i class="fas fa-code fa-3x"></i><br> <br> Backend</span><br /></div></div>
                 </div>
               </div>
             </div>
@@ -150,12 +151,12 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Parth Namdev <br>19BCE0440</span>
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Parth Namdev <br>19BCE0440</span>
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
-                  <div class="contri_back"><span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span></div></div>
+                  <div class="contri_back"><span class="contri_content_back flipoverflow"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span></div></div>
                 </div>
               </div>
             </div>
@@ -169,14 +170,14 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Aryak Roy <br>19BCE2165</span>
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Aryak Roy <br>19BCE2165</span>
                     
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
                   <div class="contri_back">
-                    <span class="contri_content_back"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span><br /></div>
+                    <span class="contri_content_back flipoverflow"><i class="far fa-edit fa-3x"></i><br> <br> Frontend</span><br /></div>
                 </div>
               </div>
             </div>
@@ -190,13 +191,13 @@
                 <div class="front">
                   <!-- front content -->
                   <div class="contri_front">
-                    <span class="contri_content_front"><i class="far fa-user-circle fa-3x"></i> <br> <br>Nupoor Raj <br>19BCE2145</span>  
+                    <span class="contri_content_front flipoverflow"><i class="far fa-user-circle fa-3x"></i> <br> <br>Nupoor Raj <br>19BCE2145</span>  
                   </div>
                 </div>
                 <div class="back">
                   <!-- back content -->
                   <div class="contri_back">
-                    <span class="contri_content_back"><i class="fas fa-file-alt fa-3x"></i> <br> <br> Documentation <br>and <br>Research</span></div>
+                    <span class="contri_content_back flipoverflow"><i class="fas fa-file-alt fa-3x"></i> <br> <br> Documentation <br>and <br>Research</span></div>
                 </div>
               </div>
             </div>
@@ -204,6 +205,6 @@
         </tr>
       </table>
     </div>
-    <div class="bottom"></div>
+    <div class="bottom" style="top:1350px"></div>
   </body>
 </html>

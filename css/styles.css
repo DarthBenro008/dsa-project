@@ -220,7 +220,7 @@ body {
   background-color:rgb(142,228,175,0.9);
   font-size: x-large;
   text-align: center;
-  height: 300px;
+  height: auto;
   position:fixed;
   top:220px;
   left: 20%;
@@ -264,6 +264,11 @@ body {
     transition-duration: 0.2s;
     font-family: 'Cabin', 'Montserrat', sans-serif;
     border: none;
+}
+.algo_submit:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color:white;
+
 }
 .choose_algoritm_heading{
   font-family: 'Cabin', 'Montserrat', sans-serif;
@@ -316,6 +321,10 @@ body {
 .back {
   transform: rotateX(180deg);
   
+}
+.flipoverflow
+{
+  overflow-wrap: break-word;
 }
 
 .flip-container, .flipper {
@@ -385,6 +394,7 @@ body {
   overflow-wrap: break-word;
   text-align: left;
 }
+
 .word{
   font-family: 'Montserrat Subrayada', sans-serif;
   font-size: 50px;
@@ -402,5 +412,49 @@ hr{
   font-size: 25px;
   line-height: 30px;
   font-family: 'Cabin', sans-serif;
+  max-height:90px;
+  overflow-y:scroll; /*vertical scroll bar*/
   
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8EE4AF; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.load
+{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.load_div{
+  background-color: #8EE4AF;
+    z-index:100;
+    position:fixed;
+    top:0;
+    bottom:0;
+    width:100%;
+    
+}
+.edit
+{
+
+  border:solid 3px #5CD49F;
+  border-radius: 50%;
 }
