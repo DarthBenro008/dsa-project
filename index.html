@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -40,7 +40,7 @@
 
       <table>
         <tr>
-          <td>Algorithm 1</td>
+          <td>Interpolation Search</td>
           <td>
             <div class="pretty p-icon p-round p-jelly edit">
               <input type="radio" name="algoradio" id = "firstCheckBox" />
@@ -52,7 +52,7 @@
           </td>
         </tr>
         <tr>
-          <td>Algorithm 2</td>
+          <td>Jump Search</td>
           <td>
             <div class="pretty p-icon p-round p-jelly edit" >
             <input type="radio" name="algoradio"  >
@@ -63,7 +63,7 @@
           </td>
         </tr>
         <tr>
-          <td>Algorithm 3</td>
+          <td>Binary Search</td>
           <td>
             <div class="pretty p-icon p-round p-jelly edit">
             <input type="radio" name="algoradio"/>
@@ -74,7 +74,7 @@
           </td>
         </tr>
         <tr>
-          <td>Algorithm 4</td>
+          <td>Linear Search</td>
           <td>
             <div class="pretty p-icon p-round p-jelly edit">
             <input type="radio" name="algoradio" />
@@ -96,10 +96,13 @@
       </h1>
       <a href="know_more.html" id="know">Know more ></a>
       <div class="search-box">
-        <input class="input-box" type="text" id="word_input" placeholder="Search" />
-        <a class="btn" onclick="callPopUp()" href="#" id="searchbtn">
-          <i class="fas fa-search" style="font-size:x-large"></i>
-        </a>
+        <form method="post" action="/uploaded">
+          <input method="post" name="input" action="/uploaded" class="input-box" type="text" id="word_input"
+            placeholder="Search" />
+          <a class="btn" onclick="callPopUp()" href="#" id="searchbtn">
+            <i class="fas fa-search" style="font-size:x-large"></i>
+          </a>
+        </form>
         <script>
           var input = document.getElementById("word_input");
       
