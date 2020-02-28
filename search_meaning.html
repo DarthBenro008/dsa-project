@@ -100,10 +100,26 @@
   </div>
   <!--sticky corner search bar-->
   <div class="sticky_search_circle">
-    <input class="input-box" type="text" id="word_input" placeholder="Search" />
-    <a class="btn" onclick="callPopUp()" href="#">
-      <i class="fas fa-search" style="font-size:x-large"></i>
-    </a>
+    <form method="post" action="/uploaded">
+      <input method="post" name="input" action="/uploaded" class="input-box" type="text" id="word_input"
+        placeholder="Search" />
+      <a class="btn" onclick="callPopUp()" href="#" id="searchbtn">
+        <i class="fas fa-search" style="font-size:x-large"></i>
+      </a>
+    </form>
+    <script>
+      var input = document.getElementById("word_input");
+  
+        input.addEventListener("keyup", function (event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          // Cancel the default action, if needed
+          event.preventDefault();
+          // Trigger the button element with a click
+          document.getElementById("searchbtn").click();
+        }
+      });
+    </script>
   </div>
 
   <div class="top">
