@@ -55,6 +55,6 @@ function hide_loading(){
   var elements = document.getElementsByClassName("load_div");
     if (elements.length > 0) {
       elements[0].style.zIndex = "-1";
+      elements[0].style.transition = "3s";
     }
 }
-  

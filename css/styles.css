@@ -129,7 +129,7 @@ body {
     color: #8ee4af;
   }
   .btn
-  {color:#8EE4AF;
+  {color:#5CD49F;
   float: right;
   text-decoration:none;
   
@@ -145,7 +145,7 @@ body {
   
   }
   .search-box:hover .btn{
-  background-color:#8EE4AF;
+  background-color:#5CD49F;
   color:#40514E;
   }
   .search-box:hover{
@@ -164,6 +164,7 @@ body {
     transition: width 0.6s;
     border-radius: 80px;/*40*/
     padding: 10px;
+    color: #5CD49F;
   
   }
   .sticky_search_circle:hover{
@@ -171,7 +172,7 @@ body {
     
   }
   .sticky_search_circle:hover .btn{
-    background-color:#8EE4AF;
+    background-color:#5CD49F;
     color:#40514E;
     }
   .sticky_search_circle:hover .input-box{
@@ -445,7 +446,7 @@ hr{
 }
 .load_div{
   background-color: #8EE4AF;
-    z-index:100;
+    z-index:10000;
     position:fixed;
     top:0;
     bottom:0;
