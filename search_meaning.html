@@ -26,15 +26,7 @@
       console.log("DOCU LALALLALALA");
       var socket = io.connect();
       socket.on("message", function (data) {
-        document.getElementById('displayword').innerHTML = data[0];
-        document.getElementById('exectime').innerHTML = data[1] +" ms";
-        document.getElementById('meaning').innerHTML = data[2];
-        document.getElementById('t1').innerHTML = data[1] +" ms";
-        document.getElementById('t2').innerHTML = data[3] +" ms";
-        document.getElementById('t3').innerHTML = data[4] +" ms";
-        document.getElementById('t4').innerHTML = data[5] +" ms";
-        console.log(data)
-        console.log("LALALLA");
+        domWorks(data)
       });
     });
   </script>
@@ -281,35 +273,4 @@
   <div class="bottom"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script>
-    new Chart(document.getElementById("chartjs-1"), {
-    type: "bar",
-    data: {
-    labels: ["Linear", "Binary", "Interpolation", "Jump"],
-      datasets: [
-        {
-          label: "Time comparison",
-        
-          data: [65 , 59, 80, 81],
-          fill: false,
-          backgroundColor: [
-            "rgb(64, 81, 78, 0.2)",
-            "rgb(64, 81, 78, 0.2)",
-            "rgb(64, 81, 78, 0.2)",
-            "rgb(64, 81, 78, 0.2)"
-          ],
-          borderColor: [
-            "rgb(64, 81, 78)",
-            "rgb(64, 81, 78)",
-            "rgb(64, 81, 78)",
-            "rgb(64, 81, 78)"
-          ],
-          borderWidth: 1,
-        },
-      ],
-    },
-    options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } },
-  });
-
-</script>
 </html>

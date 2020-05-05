@@ -66,3 +66,44 @@ function hide_loading2(){
       elements[0].style.transition = "1.55s";
     }
 }
+
+function domWorks(data){
+  document.getElementById('displayword').innerHTML = data[0];
+  document.getElementById('exectime').innerHTML = data[1] +" ms";
+  document.getElementById('meaning').innerHTML = data[2];
+  document.getElementById('t1').innerHTML = data[1] +" ms";
+  document.getElementById('t2').innerHTML = data[3] +" ms";
+  document.getElementById('t3').innerHTML = data[4] +" ms";
+  document.getElementById('t4').innerHTML = data[5] +" ms";
+  console.log(data)
+
+
+  new Chart(document.getElementById("chartjs-1").getContext('2d'), {
+    type: "bar",
+    data: {
+    labels: ["Linear", "Binary", "Interpolation", "Jump"],
+      datasets: [
+        {
+          label: "Time comparison",
+        
+          data: [data[1] , data[3], data[4], data[5]],
+          fill: false,
+          backgroundColor: [
+            "rgb(64, 81, 78, 0.2)",
+            "rgb(64, 81, 78, 0.2)",
+            "rgb(64, 81, 78, 0.2)",
+            "rgb(64, 81, 78, 0.2)"
+          ],
+          borderColor: [
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)"
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } },
+  });
+}
