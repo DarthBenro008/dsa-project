@@ -78,7 +78,7 @@ function domWorks(data){
   console.log(data)
 
 
-  new Chart(document.getElementById("chartjs-1").getContext('2d'), {
+  new Chart(document.getElementById("chartjs-2").getContext('2d'), {
     type: "bar",
     data: {
     labels: ["Linear", "Binary", "Interpolation", "Jump"],
@@ -101,6 +101,34 @@ function domWorks(data){
             "rgb(64, 81, 78)"
           ],
           borderWidth: 1,
+        },
+      ],
+    },
+    options: { scales: { yAxes: [{ ticks: { beginAtZero: true } }] } },
+  });
+  new Chart(document.getElementById("chartjs-1").getContext('2d'), {
+    type: "line",
+    data: {
+    labels: ["Linear", "Binary", "Interpolation", "Jump"],
+      datasets: [
+        {
+          label: "Time comparison",
+        
+          data: [data[1] , data[3], data[4], data[5]],
+          fill: false,
+          backgroundColor: [
+            "rgb(64, 81, 78, 0.1)",
+            "rgb(64, 81, 78, 0.1)",
+            "rgb(64, 81, 78, 0.1)",
+            "rgb(64, 81, 78, 0.1)"
+          ],
+          borderColor: [
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)",
+            "rgb(64, 81, 78)"
+          ],
+          borderWidth: 5,
         },
       ],
     },
